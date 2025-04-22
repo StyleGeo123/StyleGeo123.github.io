@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Vividportraits: Face Parsing Guided Portrait Animation">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StyleGeoSync">
+  <meta name="keywords" content="lip-sync, talking head generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StyleGeoSync: High-Fidelity Lip Sync with Style-Aware Geometric Guidance of 3D Facial Segmentation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -37,9 +37,10 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-100 p-8">
 
   <section class="hero">
     <div class="hero-body">
@@ -134,29 +135,92 @@
 </section> -->
 
 
+  <section class="bg-white p-6 rounded-lg shadow-md">
+    <h1 class="text-2xl font-bold mb-4">Speaking in Different kinds of Audio (e.g. English, English Song and Chinese)</h1>
+    <p class="mb-6">Template videos are AI-generated</p>
+    <div class="flex flex-wrap -mx-4 items-center">
+        <div class="w-1/2 px-4">
+            <div class="aspect-w-16 aspect-h-9">
+                <video preload="metadata" poster="" id="video1" autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/videos/Demo/demo_keling01.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="text-sm text-gray-600 mt-2 text-center">Speech: Michelle Obama</p>
+        </div>
+        <div class="w-1/2 px-4">
+            <div class="aspect-w-16 aspect-h-9">
+                <video preload="metadata" poster="" id="video2" autoplay controls muted loop playsinline width="85%">
+                    <source src="./static/videos/Demo/demo_keling04.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="text-sm text-gray-600 mt-2 text-center">Speech: Barack Hussein Obama at the graduation ceremony</p>
+        </div>
+    </div>
+  </section>
+
+
+  <section class="bg-white p-6 rounded-lg shadow-md">
+
+    <div class="flex flex-wrap -mx-4 items-center">
+        <div class="w-1/2 px-4">
+            <div class="aspect-w-16 aspect-h-9">
+                <video preload="metadata" poster="" id="video1" autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/videos/Demo/demo_keling05.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="text-sm text-gray-600 mt-2 text-center">Song: Love the Way You Lie, Rihanna</p>
+        </div>
+        <div class="w-1/2 px-4">
+            <div class="aspect-w-16 aspect-h-9">
+                <video preload="metadata" poster="" id="video2" autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/videos/Demo/demo_keling09.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="text-sm text-gray-600 mt-2 text-center">Speech: Chinese, Dong Qing</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <h1 class="text-2xl font-bold mb-4">Lip-Synced in cartoon character</h1>
+      <div class="flex justify-center">
+          <div class="item item-vid0 w-3/5">
+              <video preload="metadata" poster="" id="000" autoplay controls muted loop playsinline width="100%">
+                  <source src="./static/videos/Demo/demo_keling08.mp4" type="video/mp4">
+              </video>
+          </div>
+      </div>
+      <p class="text-sm text-gray-600 mt-2 text-center">Speech: Chinese, Benny Sa</p>
+  </div>
+  </section>
+
+
 <section class="hero is-light is-small">
   <div class="hero-body">
-    <h1 style="font-size: 25px; font-weight: bold;"><b>Qualitative Comparison with other methods</b></h1></br>
-        <div class="item item-vid0">
-          <video preload="metadata" poster="" id="000" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/Qualitative_Comparison_22MB.mp4"
-                    type="video/mp4">
-          </video>
+    <h1 class="text-2xl font-bold mb-4">Qualitative Comparison Results with other Methods</h1>
+    <div class="flex justify-center">
+        <div class="item item-vid0 w-5/5">
+            <video preload="metadata" poster="" id="000" autoplay controls muted loop playsinline width="100%">
+                <source src="./static/videos/Qualitative_Comparison_22MB.mp4" type="video/mp4">
+            </video>
         </div>
+    </div>
   </div>
 </section>
 
 
 <section class="hero is-light is-small">
   <div class="hero-body">
-    <h1 style="font-size: 25px; font-weight: bold;"><b>Speaking in different styles</b></h1></br>
+    <h1 class="text-2xl font-bold mb-4">Speaking in different styles</h1>
     <p>Given a template video, a driving audio, and a reference video that provides the speaking style, our method can generate high-fidelity lip-synced results with the specified speaking style under the guidance of 3D facial segmentation.</p></br>
-        <div class="item item-vid0">
-          <video preload="metadata" poster="" id="000" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/Demo/video1.mp4"
-                    type="video/mp4">
-          </video>
+    <div class="flex justify-center">
+        <div class="item item-vid0 w-3/5">
+            <video preload="metadata" poster="" id="000" autoplay controls muted loop playsinline width="100%">
+                <source src="./static/videos/Demo/video1.mp4" type="video/mp4">
+            </video>
         </div>
+    </div>
   </div>
 </section>
 
