@@ -82,8 +82,14 @@
             <p>
               For talking head generation and its downstream applications, the generalized audio-driven lip-sync technology is of great significance. However, existing methods still face challenges in eliminating artifacts in the generated frames and maintaining the personalized speaking style of the template video. In this paper, we propose StyleGeoSync, a generalized high-fidelity lip-sync framework,  consisting of style-aware audio-driven spatial geometry construction and 3D facial segmentation-guided texture generation. To achieve personalized and style-consistent lip synchronization, we introduce a style condition mechanism that disentangles lip motion into audio-related absolute dynamics and audio-independent speaking style. Moreover, to fundamentally eliminate visual artifacts, we design the texture generation as a standalone module, which prevents interference from the reference image during lip motion synthesis. By decoupling lip movements and image textures into two stages,  this framework can generate lip-synced videos with better image quality according to the given audio, and achieve specific speaking style transfer based on the reference video. Experimental results on CelebV-HQ and HDTF datasets demonstrate that our proposed method outperforms existing methods in image quality, lip synchronization, and identity preservation.
             </p>
+            <p>  </p>
           </div>
           <img src="./static/images/006.png">
+          <div class="content has-text-justified">
+            <p>
+          The overall framework of StyleGeoSync. Firstly, the (a) Style and Audio Extraction module is used to obtain the speaking style and audio embedding of the reference video. Then, the (b) Stylized Audio-to-Motion Network predicts the stylized expression coefficients, which are subsequently employed to construct the spatial facial geometry. Next, the (c) Segmentation Transformation module leverages prior Mesh-Part-Masks to transform the geometry into 3D face segmentation maps. Finally, after the (d) Segmentation-guided Texture Generation process, the target video is generated.
+          </p>
+        </div>
         </div>
       </div>
       <!--/ Abstract. -->
@@ -136,7 +142,7 @@
 
 
   <section class="bg-white p-6 rounded-lg shadow-md">
-    <h1 class="text-2xl font-bold mb-4">Speaking in Different kinds of Audio (e.g. English, English Song and Chinese)</h1>
+    <h1 class="text-2xl font-bold mb-4">Speaking in Different kinds of Audio (e.g. English, Chinese and Song)</h1>
     <p class="mb-6">Template videos are AI-generated</p>
     <div class="flex flex-wrap -mx-4 items-center">
         <div class="w-1/2 px-4">
@@ -164,20 +170,20 @@
     <div class="flex flex-wrap -mx-4 items-center">
         <div class="w-1/2 px-4">
             <div class="aspect-w-16 aspect-h-9">
-                <video preload="metadata" poster="" id="video1" autoplay controls muted loop playsinline width="100%">
-                    <source src="./static/videos/Demo/demo_keling05.mp4" type="video/mp4">
-                </video>
-            </div>
-            <p class="text-sm text-gray-600 mt-2 text-center">Song: Love the Way You Lie, Rihanna</p>
-        </div>
-        <div class="w-1/2 px-4">
-            <div class="aspect-w-16 aspect-h-9">
                 <video preload="metadata" poster="" id="video2" autoplay controls muted loop playsinline width="100%">
                     <source src="./static/videos/Demo/demo_keling09.mp4" type="video/mp4">
                 </video>
             </div>
             <p class="text-sm text-gray-600 mt-2 text-center">Speech: Chinese, Dong Qing</p>
         </div>
+        <div class="w-1/2 px-4">
+          <div class="aspect-w-16 aspect-h-9">
+              <video preload="metadata" poster="" id="video1" autoplay controls muted loop playsinline width="100%">
+                  <source src="./static/videos/Demo/demo_keling05.mp4" type="video/mp4">
+              </video>
+          </div>
+          <p class="text-sm text-gray-600 mt-2 text-center">Song: Love the Way You Lie, Rihanna</p>
+      </div>
     </div>
   </section>
 
@@ -191,7 +197,7 @@
               </video>
           </div>
       </div>
-      <p class="text-sm text-gray-600 mt-2 text-center">Speech: Chinese, Benny Sa</p>
+      <p class="text-sm text-gray-600 mt-2 text-center">Vocal Source: Chinese, Benny Sa, Speech</p>
   </div>
   </section>
 
