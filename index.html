@@ -142,7 +142,7 @@
 
 
   <section class="bg-white p-6 rounded-lg shadow-md">
-    <h1 class="text-2xl font-bold mb-4">Speaking in Different kinds of Audio (e.g. English, Chinese and Song)</h1>
+    <h1 class="text-2xl font-bold mb-4">Lip-Synced in Different kinds of Audio (e.g. English, Chinese and Song)</h1>
     <p class="mb-6">Template videos are AI-generated</p>
     <div class="flex flex-wrap -mx-4 items-center">
         <div class="w-1/2 px-4">
@@ -190,6 +190,7 @@
   <section class="hero is-light is-small">
     <div class="hero-body">
       <h1 class="text-2xl font-bold mb-4">Lip-Synced in cartoon character</h1>
+      <p class="mb-6">Template video is AI-generated</p>
       <div class="flex justify-center">
           <div class="item item-vid0 w-3/5">
               <video preload="metadata" poster="" id="000" autoplay controls muted loop playsinline width="100%">
@@ -199,6 +200,30 @@
       </div>
       <p class="text-sm text-gray-600 mt-2 text-center">Vocal Source: Chinese, Benny Sa, Speech</p>
   </div>
+  </section>
+
+
+  <section class="bg-white p-6 rounded-lg shadow-md">
+    <h1 class="text-2xl font-bold mb-4">Speaking in different styles</h1>
+    <p class="mb-6">Given a template video, a driving audio, and a reference video that provides the speaking style, our method can generate high-fidelity lip-synced results with the specified speaking style under the guidance of 3D facial segmentation.</p>
+    <div class="flex flex-wrap -mx-4 items-center">
+        <div class="w-1/2 px-4">
+            <div class="aspect-w-16 aspect-h-9">
+                <video preload="metadata" poster="" id="video1" autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/videos/Demo/teaser01_up.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="text-sm text-gray-600 mt-2 text-center">Style Reference & Audio (left), Lip-Synced (middle), 3D Segmentation Guidance (right)</p>
+        </div>
+        <div class="w-1/2 px-4">
+            <div class="aspect-w-16 aspect-h-9">
+                <video preload="metadata" poster="" id="video2" autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/videos/Demo/teaser01_down.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="text-sm text-gray-600 mt-2 text-center">Style Reference & Template (left), Lip-Synced (middle), 3D Segmentation Guidance (right)</p>
+        </div>
+    </div>
   </section>
 
 
@@ -216,17 +241,81 @@
 </section>
 
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <h1 class="text-2xl font-bold mb-4">Speaking in different styles</h1>
-    <p>Given a template video, a driving audio, and a reference video that provides the speaking style, our method can generate high-fidelity lip-synced results with the specified speaking style under the guidance of 3D facial segmentation.</p></br>
-    <div class="flex justify-center">
-        <div class="item item-vid0 w-3/5">
-            <video preload="metadata" poster="" id="000" autoplay controls muted loop playsinline width="100%">
-                <source src="./static/videos/Demo/video1.mp4" type="video/mp4">
+<section class="bg-white p-6 rounded-lg shadow-md">
+  <h1 class="text-2xl font-bold mb-4">Performance on the out-of-domain CelebV-HQ dataset</h1>
+  <p class="mb-6">These videos and audios are paired in a self-driving setting.</p>
+  <div class="flex flex-wrap -mx-4 items-center">
+      <div class="w-1/4 px-4">
+          <div class="aspect-w-16 aspect-h-9">
+              <video preload="metadata" poster="" id="video1" autoplay controls muted loop playsinline width="100%">
+                  <source src="./static/videos/SelfD/CelebVHQ_case1.mp4" type="video/mp4">
+              </video>
+          </div>
+          <p class="text-sm text-gray-600 mt-2 text-center"> </p>
+      </div>
+      <div class="w-1/4 px-4">
+          <div class="aspect-w-16 aspect-h-9">
+              <video preload="metadata" poster="" id="video2" autoplay controls muted loop playsinline width="100%">
+                  <source src="./static/videos/SelfD/CelebVHQ_case2.mp4" type="video/mp4">
+              </video>
+          </div>
+          <p class="text-sm text-gray-600 mt-2 text-center"> </p>
+      </div>  
+      <div class="w-1/4 px-4">
+        <div class="aspect-w-16 aspect-h-9">
+            <video preload="metadata" poster="" id="video1" autoplay controls muted loop playsinline width="100%">
+                <source src="./static/videos/SelfD/CelebVHQ_case3.mp4" type="video/mp4">
             </video>
         </div>
-    </div>
+        <p class="text-sm text-gray-600 mt-2 text-center"> </p>
+      </div>
+      <div class="w-1/4 px-4">
+        <div class="aspect-w-16 aspect-h-9">
+            <video preload="metadata" poster="" id="video2" autoplay controls muted loop playsinline width="100%">
+                <source src="./static/videos/SelfD/CelebVHQ_case4.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="text-sm text-gray-600 mt-2 text-center"> </p>
+      </div>
+    
+  </div>
+</section>
+
+<section class="bg-white p-6 rounded-lg shadow-md">
+  <div class="flex flex-wrap -mx-4 items-center">
+      <div class="w-1/4 px-4">
+          <div class="aspect-w-16 aspect-h-9">
+              <video preload="metadata" poster="" id="video1" autoplay controls muted loop playsinline width="100%">
+                  <source src="./static/videos/SelfD/CelebVHQ_case5.mp4" type="video/mp4">
+              </video>
+          </div>
+          <p class="text-sm text-gray-600 mt-2 text-center"> </p>
+      </div>
+      <div class="w-1/4 px-4">
+          <div class="aspect-w-16 aspect-h-9">
+              <video preload="metadata" poster="" id="video2" autoplay controls muted loop playsinline width="100%">
+                  <source src="./static/videos/SelfD/CelebVHQ_case6.mp4" type="video/mp4">
+              </video>
+          </div>
+          <p class="text-sm text-gray-600 mt-2 text-center"> </p>
+      </div>  
+      <div class="w-1/4 px-4">
+        <div class="aspect-w-16 aspect-h-9">
+            <video preload="metadata" poster="" id="video1" autoplay controls muted loop playsinline width="100%">
+                <source src="./static/videos/SelfD/CelebVHQ_case7.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="text-sm text-gray-600 mt-2 text-center"> </p>
+      </div>
+      <div class="w-1/4 px-4">
+        <div class="aspect-w-16 aspect-h-9">
+            <video preload="metadata" poster="" id="video2" autoplay controls muted loop playsinline width="100%">
+                <source src="./static/videos/SelfD/CelebVHQ_case8.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="text-sm text-gray-600 mt-2 text-center"> </p>
+      </div>
+    
   </div>
 </section>
 
